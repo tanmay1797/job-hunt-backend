@@ -16,14 +16,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-// const corsOption = {
-//   origin: "https://job-hunt-six-sigma.vercel.app/",
-//   // origin: ["https://job-hunt-six-sigma.vercel.app", "http://localhost:5173"],
-//   credentials: true,
-// };
+const corsOption = {
+  origin: "https://job-hunt-frontend-hazel.vercel.app/",
+  // origin: ["https://job-hunt-six-sigma.vercel.app", "http://localhost:5173"],
+  credentials: true,
+};
 
-// app.use(cors(corsOption));
-app.use(cors());
+app.use(cors(corsOption));
+// app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
