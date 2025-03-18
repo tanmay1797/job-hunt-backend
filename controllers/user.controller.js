@@ -90,8 +90,6 @@ export const login = async (req, res) => {
       expiresIn: "1d",
     });
 
-    console.log("Generated Token:", token);
-
     user = {
       _id: user._id,
       fullname: user.fullname,
