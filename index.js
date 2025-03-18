@@ -17,8 +17,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOption = {
-  // origin: "https://job-hunt-frontend-hazel.vercel.app/",
-  origin: ["https://job-hunt-six-sigma.vercel.app", "http://localhost:5173"],
+  origin: [
+    "https://job-hunt-frontend-eight.vercel.app",
+    "http://localhost:5173",
+  ],
   credentials: true,
 };
 
